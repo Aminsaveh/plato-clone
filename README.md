@@ -1,39 +1,27 @@
 # Why?
 <p align="center">
-    <b>Internet Engineering Course Assignment (Spring 2022)
+    <b>Advanced Programming Final Project (Spring 2020)
 </p>
 
 
 # Use : 
-- HTML 
-- CSS
-- ReactJS
+- Java 
+- Android
+- Socket Programming
 
 
-# Data :
+# Clone From :
 
-[Local Data](./src/data.json) 
+[Plato App](https://www.platoapp.com/) 
 
 # Find Out How To  :
 
--  Use Redux
-
-
-
-# How To Install?
-- `npm install`
-
-# How To Run?
-- `npm start`
-
-
+-  Design mini games
+-  Design online game
+-  Implement online chat
 
 # Final Result 
 
 <p align="center">
-  <img src="preview1.gif" alt="animated" />
-</p>
-
-<p align="center">
-  <img src="preview2.gif" alt="animated" />
+  <img src="show.gif" alt="animated" />
 </p>
