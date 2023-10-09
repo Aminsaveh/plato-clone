@@ -1,0 +1,4 @@
+mohammad->ali
+ali ^ salam ^ 03:58 AM | mohammad ^ bashe salam ^ 03:58 AM | ali ^ salam ^ 03:59 AM | mohammad ^ bashe salam ^ 03:59 AM | ali ^ salam ^ 03:59 AM | mohammad ^ bashe salam ^ 03:59 AM | 
+ali->mohammad
+ali ^ salam ^ 03:58 AM | mohammad ^ bashe salam ^ 03:58 AM | ali ^ salam ^ 03:59 AM | mohammad ^ bashe salam ^ 03:59 AM | ali ^ salam ^ 03:59 AM | mohammad ^ bashe salam ^ 03:59 AM | 

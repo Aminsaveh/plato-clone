@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/backgroundColor"
+                                                   app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                                   tools:context=".Connect4"
+                                                   tools:ignore="RtlHardcoded">
+
+
+    <!-- This will hold the indicators for who's score is shown. -->
+
+    <TextView
+            android:id="@+id/mainA_RL_TV_scoreTable"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center|right"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center|right"
+            android:text="Score:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+    <LinearLayout
+            android:id="@+id/mainA_RL_LL_players"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_toRightOf="@id/mainA_RL_TV_scoreTable"
+            android:orientation="horizontal"
+            tools:ignore="HardcodedText,MissingConstraints">
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"></View>
+    </LinearLayout>
+
+    <!-- This will show current scores for player/AI -->
+    <LinearLayout
+            android:id="@+id/mainA_RL_LL_scores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainA_RL_LL_players"
+            android:layout_alignStart="@id/mainA_RL_LL_players"
+            android:orientation="horizontal"
+            tools:ignore="HardcodedText,MissingConstraints">
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"></View>
+    </LinearLayout>
+
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/c4board_diffused"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr30"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr26"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr1"
+            android:onClick="click"        android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr30"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr16"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cr17"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr27"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr16"
+            app:layout_constraintTop_toBottomOf="@+id/cr18"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr28"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr27"
+            app:layout_constraintTop_toBottomOf="@+id/cr19"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr29"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr28"
+            app:layout_constraintHorizontal_bias="0.654"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cr20"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr17"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cr21"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr18"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr17"
+            app:layout_constraintTop_toBottomOf="@+id/cr22"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr19"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr18"
+            app:layout_constraintTop_toBottomOf="@+id/cr23"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr20"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cr24"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr21"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cr25"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr22"
+            android:onClick="click"
+            android:layout_width="78dp"
+            android:layout_height="74dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr21"
+            app:layout_constraintTop_toBottomOf="@+id/cr26"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr23"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr22"
+            app:layout_constraintTop_toBottomOf="@+id/cr30"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr24"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cr1"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr25"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/cr26"
+            android:onClick="click"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/cr25"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/white_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="2"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainA_RL_TV_AIName" />
+
+    <TextView
+            android:id="@+id/red_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="2"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/white_count"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/mainA_RL_TV_scoreTable"
+            app:layout_constraintTop_toBottomOf="@+id/mainA_RL_TV_playerName"
+            app:layout_constraintVertical_bias="0.475" />
+
+    <EditText
+            android:id="@+id/mainA_RL_TV_playerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="2"
+            android:focusable="false"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textAutoComplete|textCapWords"
+            android:nextFocusRight="@+id/mainA_RL_TV_AIName"
+            android:singleLine="true"
+            android:text="Red"
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/mainA_RL_TV_scoreTable"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+            android:id="@+id/mainA_RL_TV_AIName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="100dp"
+            android:layout_weight="2"
+            android:focusable="false"
+            android:imeOptions="actionDone|actionGo"
+            android:inputType="textPersonName|textAutoComplete|textCapWords"
+            android:singleLine="true"
+            android:text="White"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mainA_RL_TV_playerName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

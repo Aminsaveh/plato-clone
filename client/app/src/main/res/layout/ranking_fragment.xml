@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:id="@+id/playerpos"
+                android:layout_marginLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_gravity="center"
+                android:textSize="30dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/profile_image"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:elevation="12dp"
+                android:src="@drawable/ic_baseline_person_24"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="#FFFF" />
+        <TextView
+                android:id="@+id/profile_user"
+                android:layout_marginLeft="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="player"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="1"
+                  android:id="@+id/profile_score"
+                  android:textSize="30dp"
+                  android:gravity="center|right"
+                  android:layout_gravity="center"
+                  android:layout_marginRight="40dp"/>
+
+
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="Ranking"
+              android:textAlignment="center"
+              android:textSize="30dp"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"
+                                                           android:id="@+id/swiperefresh2">
+
+        <ListView
+                android:id="@+id/ranking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+        </ListView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

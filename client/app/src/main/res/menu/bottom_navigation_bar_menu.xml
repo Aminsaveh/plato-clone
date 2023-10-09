@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeItem" android:title=""  android:icon="@drawable/ic_home_black_24dp_50_percent_opacity" />
+    <item android:id="@+id/gameItem" android:title="" android:icon="@drawable/ic_videogame_asset_black_24dp_50_percent_opacity" />
+    <item android:id="@+id/chatItem" android:title="" android:icon="@drawable/ic_chat_black_24dp_50_percent_opacity" />
+    <item android:id="@+id/peopleItem" android:title="" android:icon="@drawable/ic_people_black_24dp_50_percent_opacity" />
+    <item android:id="@+id/shopItem" android:title="" android:icon="@drawable/ic_shopping_cart_black_24dp_50_percent_opacity" />
+
+</menu>
